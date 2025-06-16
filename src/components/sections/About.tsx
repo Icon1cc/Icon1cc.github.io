@@ -28,16 +28,17 @@ const About = () => {
           {/* Bio */}
           <div className="space-y-6">
             <p className="text-lg text-gray-300 leading-relaxed">
-              Hey, I’m Rishabh. I’m a software developer who’s also deeply into machine learning. Right now, I’m working at SAP, helping build better UI and software tools. I’ve also worked on ML tools, LLM research, and even built VR and game projects.
+              I'm a software developer and machine learning enthusiast currently working at Porsche Engineering and SAP. At Porsche, I'm building tools that turn geospatial data into real-world driving simulations, and I’m also exploring how large language models can help with map-based systems. At SAP, I’m focused on frontend development using SAPUI5, fixing bugs, and helping build features that improve real user workflows.
             </p>
 
             <p className="text-lg text-gray-300 leading-relaxed">
-              Over time, I’ve explored everything from IoT systems and NLP apps to driving simulations and open-source tools. I love creating things that solve real problems and enjoy learning by building.
+              My background includes working on projects across machine learning, full-stack development, and even VR integrations with robotics. I enjoy switching between research and real-world software problems.
             </p>
 
             <p className="text-lg text-gray-300 leading-relaxed">
-              When I’m not coding, I’m probably exploring new AI papers, testing out prototypes, or working on side projects with cool tech like Unity, React, or Python.
+              Whether I’m working on a game prototype or optimizing LLM models for research, I love learning and building things that make tech more usable, smart, and scalable.
             </p>
+
           </div>
         </div>
 
