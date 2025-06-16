@@ -28,18 +28,23 @@ const About = () => {
           {/* Bio */}
           <div className="space-y-6">
             <p className="text-lg text-gray-300 leading-relaxed">
-              I'm a passionate software developer with a deep fascination for machine learning and artificial intelligence. 
-              My journey in technology spans from IoT systems and mobile applications to advanced NLP and computer vision projects.
+              I’m Rishabh, a passionate software developer and machine learning researcher currently working at Porsche Engineering. 
+              My focus is building intelligent systems that blend cutting-edge ML techniques with real-world applications.
             </p>
+
             <p className="text-lg text-gray-300 leading-relaxed">
-              With experience in both research and industry applications, I enjoy tackling complex problems that bridge 
-              the gap between theoretical computer science and practical, real-world solutions. My work ranges from 
-              developing proximity-based IoT monitoring systems to creating intelligent applications that leverage 
-              state-of-the-art machine learning models.
+              My journey spans across industries and roles — from developing geoJSON to OpenDRIVE conversion tools for autonomous driving, 
+              to integrating VR-based driving assistants using Unity, C#, and Python. I'm also actively exploring LLMs for geospatial data interpretation.
             </p>
+
             <p className="text-lg text-gray-300 leading-relaxed">
-              When I'm not coding, I'm exploring the latest developments in AI research, contributing to open-source 
-              projects, or working on innovative applications that push the boundaries of what's possible with technology.
+              Previously, I worked with SAP, Datrix AI, and the University of Heidelberg on projects involving NLP, LLMs, time-series forecasting, 
+              and full-stack web development. I've built tools using React, FastAPI, Docker, and more to bridge the gap between research and usable tech.
+            </p>
+
+            <p className="text-lg text-gray-300 leading-relaxed">
+              Outside of work, I enjoy contributing to open-source, mentoring peers, and working on innovative apps — from EdTech hackathon prototypes 
+              to multiplayer game engines. I thrive in roles that challenge both my coding and problem-solving skills.
             </p>
           </div>
         </div>
