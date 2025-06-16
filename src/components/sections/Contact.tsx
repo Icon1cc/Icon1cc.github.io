@@ -1,3 +1,4 @@
+import { useRef, useEffect } from 'react';
 import { Send } from 'lucide-react';
 import { useForm, ValidationError } from '@formspree/react';
 import { useToast } from '@/hooks/use-toast';
@@ -6,15 +7,21 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 
 const Contact = () => {
+  const formRef = useRef<HTMLFormElement>(null);
   const [state, handleSubmit] = useForm('xkgbbavd');
   const { toast } = useToast();
 
-  if (state.succeeded) {
-    toast({
-      title: 'Message sent!',
-      description: "Thank you for your message. I'll get back to you soon.",
-    });
-  }
+  useEffect(() => {
+    if (state.succeeded) {
+      toast({
+        title: 'Message sent!',
+        description: "Thank you for your message. I'll get back to you soon.",
+      });
+
+      // Reset form fields
+      formRef.current?.reset();
+    }
+  }, [state.succeeded, toast]);
 
   return (
     <section id="contact" className="py-20 px-4 bg-gray-800/50">
@@ -24,7 +31,6 @@ const Contact = () => {
         </h2>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Left side */}
           <div className="text-center md:text-left flex flex-col justify-center h-full space-y-8">
             <h3 className="text-2xl font-semibold text-white">Let's Connect</h3>
             <p className="text-gray-400 text-lg leading-relaxed">
@@ -32,9 +38,8 @@ const Contact = () => {
             </p>
           </div>
 
-          {/* Right side - Formspree-powered form */}
           <div className="bg-gray-800 rounded-2xl p-8">
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
                   Name
