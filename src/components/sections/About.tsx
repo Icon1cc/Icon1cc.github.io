@@ -14,13 +14,13 @@ const About = () => {
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
           About Me
         </h2>
-        
+
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Profile Image */}
           <div className="w-80 h-80 mx-auto md:mx-0 rounded-full overflow-hidden shadow-lg">
-            <img 
-              src="/images/me.jpg" 
-              alt="Profile" 
+            <img
+              src="/images/me.jpg"
+              alt="Profile"
               className="w-full h-full object-cover"
             />
           </div>
@@ -28,23 +28,15 @@ const About = () => {
           {/* Bio */}
           <div className="space-y-6">
             <p className="text-lg text-gray-300 leading-relaxed">
-              I’m Rishabh, a passionate software developer and machine learning researcher currently working at Porsche Engineering. 
-              My focus is building intelligent systems that blend cutting-edge ML techniques with real-world applications.
+              Hey, I’m Rishabh. I’m a software developer who’s also deeply into machine learning. Right now, I’m working at SAP, helping build better UI and software tools. I’ve also worked on ML tools, LLM research, and even built VR and game projects.
             </p>
 
             <p className="text-lg text-gray-300 leading-relaxed">
-              My journey spans across industries and roles — from developing geoJSON to OpenDRIVE conversion tools for autonomous driving, 
-              to integrating VR-based driving assistants using Unity, C#, and Python. I'm also actively exploring LLMs for geospatial data interpretation.
+              Over time, I’ve explored everything from IoT systems and NLP apps to driving simulations and open-source tools. I love creating things that solve real problems and enjoy learning by building.
             </p>
 
             <p className="text-lg text-gray-300 leading-relaxed">
-              Previously, I worked with SAP, Datrix AI, and the University of Heidelberg on projects involving NLP, LLMs, time-series forecasting, 
-              and full-stack web development. I've built tools using React, FastAPI, Docker, and more to bridge the gap between research and usable tech.
-            </p>
-
-            <p className="text-lg text-gray-300 leading-relaxed">
-              Outside of work, I enjoy contributing to open-source, mentoring peers, and working on innovative apps — from EdTech hackathon prototypes 
-              to multiplayer game engines. I thrive in roles that challenge both my coding and problem-solving skills.
+              When I’m not coding, I’m probably exploring new AI papers, testing out prototypes, or working on side projects with cool tech like Unity, React, or Python.
             </p>
           </div>
         </div>
@@ -56,7 +48,7 @@ const About = () => {
               <h3 className="text-2xl font-semibold text-white mb-4">{category}</h3>
               <div className="flex flex-wrap gap-3">
                 {items.map((tech) => (
-                  <span 
+                  <span
                     key={tech}
                     className="px-3 py-1 text-sm rounded-full bg-gray-700 text-gray-300 hover:bg-gray-600 transition"
                   >
