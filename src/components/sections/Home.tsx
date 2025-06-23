@@ -42,14 +42,14 @@ const Home = () => {
 
           <div className="flex justify-center space-x-6">
             <a 
-              href="https://github.com" 
+              href="https://github.com/Icon1cc" 
               className="text-gray-400 hover:text-white transition-colors duration-300 hover:scale-110 transform"
               aria-label="GitHub"
             >
               <Github size={32} />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/icon1c/" 
               className="text-gray-400 hover:text-white transition-colors duration-300 hover:scale-110 transform"
               aria-label="LinkedIn"
             >
